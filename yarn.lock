@@ -9,11 +9,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
+    lib: "workspace:^"
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
 
-"lib@workspace:packages/lib":
+"lib@workspace:^, lib@workspace:packages/lib":
   version: 0.0.0-use.local
   resolution: "lib@workspace:packages/lib"
   languageName: unknown

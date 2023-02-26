@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/app/",\
           "packageDependencies": [\
             ["app", "workspace:packages/app"],\
+            ["lib", "workspace:packages/lib"],\
             ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "SOFT"\
