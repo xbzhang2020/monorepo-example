@@ -1,0 +1,25 @@
+{
+  "name": "monorepo-example",
+  "version": "1.0.0",
+  "description": "monorepo 实践",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbzhang2020/monorepo-example.git"
+  },
+  "keywords": [
+    "monorepo"
+  ],
+  "author": "xbzhang2020@icloud.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xbzhang2020/monorepo-example/issues"
+  },
+  "homepage": "https://github.com/xbzhang2020/monorepo-example#readme"
+}
