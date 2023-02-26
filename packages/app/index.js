@@ -1,1 +1,3 @@
-module.exports = 'app'
+const lib = require("lib");
+
+console.log(lib);

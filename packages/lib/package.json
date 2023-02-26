@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/xbzhang2020/monorepo-example/issues"
   },
-  "homepage": "https://github.com/xbzhang2020/monorepo-example#readme",
-  "dependencies": {
-    "app": "workspace:^"
-  }
+  "homepage": "https://github.com/xbzhang2020/monorepo-example#readme"
 }

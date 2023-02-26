@@ -1,3 +1,1 @@
-const moduleA = require('app')
-
-console.log(moduleA)
+module.exports = 'lib'
