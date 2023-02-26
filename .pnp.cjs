@@ -14,11 +14,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "monorepo-example",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "app",\
+        "reference": "workspace:packages/app"\
+      },\
+      {\
+        "name": "lib",\
+        "reference": "workspace:packages/lib"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["app", ["workspace:packages/app"]],\
+      ["lib", ["workspace:packages/lib"]],\
       ["monorepo-example", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -30,6 +40,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["app", [\
+        ["workspace:packages/app", {\
+          "packageLocation": "./packages/app/",\
+          "packageDependencies": [\
+            ["app", "workspace:packages/app"],\
+            ["lodash", "npm:4.17.21"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["lib", [\
+        ["workspace:packages/lib", {\
+          "packageLocation": "./packages/lib/",\
+          "packageDependencies": [\
+            ["lib", "workspace:packages/lib"],\
+            ["app", "workspace:packages/app"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["lodash", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
+          "packageDependencies": [\
+            ["lodash", "npm:4.17.21"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["monorepo-example", [\
