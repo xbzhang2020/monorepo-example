@@ -46,9 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/app", {\
           "packageLocation": "./packages/app/",\
           "packageDependencies": [\
-            ["app", "workspace:packages/app"],\
-            ["lib", "workspace:packages/lib"],\
-            ["lodash", "npm:4.17.21"]\
+            ["app", "workspace:packages/app"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -60,15 +58,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lib", "workspace:packages/lib"]\
           ],\
           "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["lodash", [\
-        ["npm:4.17.21", {\
-          "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
-          "packageDependencies": [\
-            ["lodash", "npm:4.17.21"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["monorepo-example", [\
