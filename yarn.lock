@@ -451,7 +451,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
-    lib: "workspace:^"
+    common: "workspace:^"
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -547,6 +547,14 @@ __metadata:
   checksum: 9b7356817670b9a13a26ca5af1c21615463b500783b739b7634a0c2047c16cef4b2865d7576875c31c3cddf9dd621fa19285e628f20198b233a5cfdda6d0793b
   languageName: node
   linkType: hard
+
+"common@workspace:^, common@workspace:packages/common":
+  version: 0.0.0-use.local
+  resolution: "common@workspace:packages/common"
+  dependencies:
+    typescript: ^4.9.5
+  languageName: unknown
+  linkType: soft
 
 "concat-map@npm:0.0.1":
   version: 0.0.1
@@ -953,12 +961,6 @@ __metadata:
   checksum: 26bf6c5480dda5161c820c5b5c751ae1e766c587b1f951ea3fcfc973bafb7831ae5b54a31a69bd670220e42e99ec154475025a468eae58ea262f813fdc8d1c62
   languageName: node
   linkType: hard
-
-"lib@workspace:^, lib@workspace:packages/lib":
-  version: 0.0.0-use.local
-  resolution: "lib@workspace:packages/lib"
-  languageName: unknown
-  linkType: soft
 
 "lodash@npm:^4.17.21":
   version: 4.17.21
@@ -1505,7 +1507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.3":
+"typescript@npm:^4.9.3, typescript@npm:^4.9.5":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -1515,7 +1517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
   bin:
@@ -1593,7 +1595,7 @@ __metadata:
   resolution: "vue-app@workspace:packages/vue-app"
   dependencies:
     "@vitejs/plugin-vue": ^4.0.0
-    lib: "workspace:^"
+    common: "workspace:^"
     lodash: ^4.17.21
     typescript: ^4.9.3
     vite: ^4.1.0

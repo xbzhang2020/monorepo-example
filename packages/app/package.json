@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lib": "workspace:^",
+    "common": "workspace:^",
     "lodash": "^4.17.21"
   }
 }
