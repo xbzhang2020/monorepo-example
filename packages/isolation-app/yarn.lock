@@ -5,17 +5,18 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"common@portal:../common::locator=isolation-app%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "common@portal:../common::locator=isolation-app%40workspace%3A."
+"common@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "common@npm:0.2.5"
+  checksum: 3deaffb8e7a665c6a1dc7b32d74861df7ce2ddf6db6bd3a84954814ea459449f1e3c7e3ea5c60aa993ee0d60e663b436ee0bc56cc59ca1bde271875ed694b122
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "isolation-app@workspace:.":
   version: 0.0.0-use.local
   resolution: "isolation-app@workspace:."
   dependencies:
-    common: ^1.0.0
+    common: ^0.2.5
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
