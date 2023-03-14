@@ -1,3 +1,3 @@
-const lib = require("lib");
+import common from 'common'
 
-console.log(lib);
+console.log(common)

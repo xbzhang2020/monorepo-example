@@ -451,7 +451,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
-    common: "workspace:^"
+    common: ^1.0.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -548,7 +548,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"common@workspace:^, common@workspace:packages/common":
+"common@^1.0.0, common@workspace:^, common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "common@workspace:packages/common"
   dependencies:
