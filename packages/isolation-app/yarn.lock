@@ -5,19 +5,19 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"app@workspace:.":
+"common@portal:../common::locator=isolation-app%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "app@workspace:."
+  resolution: "common@portal:../common::locator=isolation-app%40workspace%3A."
+  languageName: node
+  linkType: soft
+
+"isolation-app@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "isolation-app@workspace:."
   dependencies:
     common: ^1.0.0
     lodash: ^4.17.21
   languageName: unknown
-  linkType: soft
-
-"common@portal:../common::locator=app%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "common@portal:../common::locator=app%40workspace%3A."
-  languageName: node
   linkType: soft
 
 "lodash@npm:^4.17.21":
