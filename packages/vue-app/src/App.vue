@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import lib from 'lib'
+
+console.log(lib)
 </script>
 
 <template>

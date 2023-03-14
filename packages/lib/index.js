@@ -1,1 +1,3 @@
-module.exports = 'lib'
+export default {
+  name: "lib",
+};
