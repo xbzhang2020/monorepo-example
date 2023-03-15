@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
+// 跨项目复用示例
+import { add } from "common/src/utils/index";
+const res = add(1, 2);
+console.log(res);
 </script>
 
 <template>
