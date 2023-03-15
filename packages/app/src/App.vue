@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import common from 'common'
 
-console.log(common)
 </script>
 
 <template>

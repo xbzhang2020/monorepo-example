@@ -539,7 +539,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"common@^1.0.0, common@workspace:^, common@workspace:packages/common":
+"common@workspace:^, common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "common@workspace:packages/common"
   dependencies:
@@ -952,15 +952,6 @@ __metadata:
   checksum: 26bf6c5480dda5161c820c5b5c751ae1e766c587b1f951ea3fcfc973bafb7831ae5b54a31a69bd670220e42e99ec154475025a468eae58ea262f813fdc8d1c62
   languageName: node
   linkType: hard
-
-"isolation-app@workspace:packages/isolation-app":
-  version: 0.0.0-use.local
-  resolution: "isolation-app@workspace:packages/isolation-app"
-  dependencies:
-    common: ^1.0.0
-    lodash: ^4.17.21
-  languageName: unknown
-  linkType: soft
 
 "lodash@npm:^4.17.21":
   version: 4.17.21
@@ -1590,9 +1581,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-app@workspace:packages/vue-app":
+"vue-app@workspace:packages/app":
   version: 0.0.0-use.local
-  resolution: "vue-app@workspace:packages/vue-app"
+  resolution: "vue-app@workspace:packages/app"
   dependencies:
     "@vitejs/plugin-vue": ^4.0.0
     common: "workspace:^"
